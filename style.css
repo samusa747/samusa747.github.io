@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: url("https://img.icons8.com/material-outlined/12/000000/airport.png");
+    scroll-behavior: smooth;
+}
+header{
+    padding: 120px;
+    text-align:center;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 2em;
+    background-image: url(https://www.wallpapertip.com/wmimgs/23-230517_avion.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.titulo{
+    font: 90px comic;
+}
+.title{
+    margin-left: 4em;
+    transform: initial;
+}
+i{
+    margin-left: 0.7em;
+    margin-top: 0.6em;
+}
+.w3-quarter{
+    display: block;
+    background: #ff7300;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    position: center;
+    padding: 8px;
+    transition: all 0.4s;
+} 
+.w3-quarter:hover{
+    background: #ffe033;
+    transition: all 0.4s;
+}
+img{
+    transition: all 0.4s;
+}
+img:hover{
+    transform: scaleX(1.2)scaleY(1.2)scaleZ(4.03);
+    transition: all 0.4s;
+}
+.w3-container{
+    margin-bottom: 4em;
+}
+.text{
+    margin: auto;
+}
+.descripcion{
+    text-align: start;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+.oculto{
+    opacity: 0;
+}
+.chiquito{
+    font-size: 0.89em;
+}
+.box{
+    width: 380px;
+    height: 590px;
+    margin: 0 auto; 
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid rgba(171, 250, 246, 0.596);
+    border-right: 1px solid rgba(171, 250, 246, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    background-color: rgb(227, 255, 246);
+}
+body{
+    min-height: 100vh;
+    background: #ca8bf3;
+}
+.navigation{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: #821b94;
+    transition: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.navigation:hover,.navigation.active{
+    width: 200px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: #f18dae;
+    
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex; 
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-height: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+.navigation ul li a .title{
+    position: absolute;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+@media (max-width:767px){
+    .navigation{
+        left: -60px;
+    }
+    .navigation.active{
+        left: 0px;
+        width: 100%;
+    }
+} 
+.link{
+    display: inline-block;
+    background: #8ea3ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin-top: 3em;
+    flex-direction: column;
+}
+.link:hover{
+    background:#4b6bfa;
+    transition: all 0.4s;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.15),0 9px 25px 0 rgba(0,0,0,0.10);
+}
